@@ -15,3 +15,6 @@ console.log(calc2.add(2, 5));
 console.log(calc2.multiply(2, 5));
 
 //cachings
+require("./test-module-3")();
+require("./test-module-3")();
+require("./test-module-3")();
