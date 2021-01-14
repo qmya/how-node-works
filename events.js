@@ -1,7 +1,14 @@
 const EventEmitter = require("events"); //to use events module we need to require event emitter class
 
+class Sales extends EventEmitter {
+  constructor() {
+    super();
+  }
+}
+
 //creating an instance of class
-const myEmitter = new EventEmitter();
+//const myEmitter = new EventEmitter();
+const myEmitter = new Sales();
 //these observers that observers the emitters
 myEmitter.on("newSale", () => {
   console.log("There was a new Sale");
